@@ -43,8 +43,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.imageView?.image = UIImage(named: "\(image)")!
         return cell
         
-            
-        
     }
 
    

@@ -37,7 +37,7 @@ class QuestionViewController: UIViewController {
             AnswerButtons[index].backgroundColor = UIColor.clearColor()
             AnswerButtons[index].layer.cornerRadius = 5
             AnswerButtons[index].layer.borderWidth = 0.5
-            AnswerButtons[index].layer.borderColor = UIColor.blackColor().CGColor
+            AnswerButtons[index].layer.borderColor = UIColor.grayColor().CGColor
             AnswerButtons[index].setTitle(quiz.questions[questionNum].answers[index], forState: UIControlState.Normal)
           
         }

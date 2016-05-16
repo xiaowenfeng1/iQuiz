@@ -23,19 +23,13 @@ class FinishedViewController: UIViewController {
     
     func setContent() {
         showResult.text = ("You got \(totalScore) out of \(questionNum) right.")
-        let ratio = totalScore % questionNum
+        let ratio = Double(totalScore / questionNum)
         
-        if ratio == 4 {
-            header.text = "Sorry, play again!"
-            
-        } else if ratio == 2 || ratio == 1 {
-            header.text = "Not too bad, play again!"
-            
-        } else if ratio == 3 {
-            header.text = "You are almost there, play again!"
-            
-        } else {
+        if  ratio == 1.0 {
             header.text = "Congrats, you got a perferct score!"
+
+        } else {
+            header.text = "Not too bad, try again!"
         }
         
     }
